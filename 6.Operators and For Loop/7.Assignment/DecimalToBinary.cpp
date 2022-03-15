@@ -28,8 +28,8 @@ using namespace std;
 int main() {
 	int n;
 	cin >> n;
-	int base = 1;
-	int ans = 0;
+	long long base = 1;
+	long long ans = 0;
 	while(n) {
 		int rem = n % 2;
 		ans = ans + rem * base;
