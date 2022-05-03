@@ -45,9 +45,7 @@ bool isBalanced(string expression) {
 			}
 			if(s.top() == '(') {
 				s.pop();
-			} else {
-				return false;
-			}
+			} 
 		}
 	}
 	if(s.empty()) {
