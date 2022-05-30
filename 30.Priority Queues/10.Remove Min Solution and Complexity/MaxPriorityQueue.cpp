@@ -75,7 +75,7 @@ class PriorityQueue {
             if(pq[maxIndex] < pq[leftChildIndex]) {
                 maxIndex = leftChildIndex;
             }
-            if(pq[maxIndex] < pq[rightChildIndex]) {
+            if(rightChildIndex < pq.size() && pq[maxIndex] < pq[rightChildIndex]) {
                 maxIndex = rightChildIndex;
             }
             if(maxIndex == parentIndex) {
